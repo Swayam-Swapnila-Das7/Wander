@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wander - Travel Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a class="logo" href="#Home"><h1>Wander</h1></a>
+            <ul class="sidebar">
+                <li class="close" onclick=hideSidebar()><button><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></button></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Destination">Destination</a></li>
+                <li><a href="#About">About</a></li>
+                <li ><a href="#Gallery">Gallery</a></li>
+            </ul>
+            <ul class="nav-bar">
+                <li class="hideOnMobile"><a href="#Home">Home</a></li>
+                <li class="hideOnMobile"><a href="#Destination">Destination</a></li>
+                <li class="hideOnMobile"><a href="#About">About</a></li>
+                <li class="hideOnMobile"><a href="#Gallery">Gallery</a></li>
+                <li class="menu" onclick=showSidebar()><button><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class = "hero" id = "Home">
+            <div class="hero-text">
+                <h1>Explore. Dream.<br>Discover.</h1>
+                <span>Discover buautiful places, experience newculture and create memories that last forever.</span><br>
+                <a href="#Destination"><button>Explore Now</button></a>
+            </div>
+
+        </div>
+        <div class="review">
+            <p><span>25+</span>Destinations</p>
+            <p><span>120+</span>Travelers</p>
+            <p><span>5</span>Years Experience</p>
+            <p><span>4.8</span>Average Rating</p>
+        </div>
+        <div id="Destination">
+                <h1 class="destination-heading">Popular Destinations</h1>
+                <p class="destination-subheading">Some beautiful places worth exploring</p>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://picsum.photos/1920/1080?random=10">
+                        <h1>Mountain Escape</h1>
+                        <p>Enjoy peaceful mountain, fresh air and beautiful natural scenery.</p>
+                        <span>Nature</span>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/1920/1080?random=11">
+                        <h1>Road Trip</h1>
+                        <p>Pack your bag and enjoy a long drive with friends and family.</p>
+                        <span>RoadTrip</span>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/1920/1080?random=13">
+                        <h1>Forest Adventure</h1>
+                        <p>Walk through beautiful forest and discover something new every day.</p>
+                        <span>Adventure</span>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/1920/1080?random=14">
+                        <h1>Peaceful Journey</h1>
+                        <p>Take a break from busy life and spend relaxing time surrounded by nature.</p>
+                        <span>Relax</span>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/1920/1080?random=15">
+                        <h1>Wild Places</h1>
+                        <p>Explore unknown places and enjoy unforgettable experiences.</p>
+                        <span>Explore</span>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/1920/1080?random=16">
+                        <h1>Weekend Gateway</h1>
+                        <p>A short trip can be the perfect way to refresh your mind.</p>
+                        <span>Weekend</span>
+                    </div>
+
+                </div>
+        </div>
+        <div id="About">
+            <img src="https://picsum.photos/1920/1080?random=9">
+            <div class="about_text">
+                <h1>Why I Love Travelling</h1>
+                <p>
+                    Travelling gives us an opportunity to see the world from a different perspective.</p>
+                <p>
+                    Every journey teaches us something new. We meet differnet people ,taste new food and learn about different cultures.
+                </p>
+                <a href="#Gallery">
+                    <button>View Gallery</button>
+                </a>
+            </div>
+        </div>
+        <div id="Gallery">
+            <h1>Travel Gallery</h1>
+            <p>A few moment from beautiful journeys.</p>
+            <div class="images">
+                <img src="https://picsum.photos/1920/1080?random=1">
+                <img src="https://picsum.photos/1920/1080?random=2">
+                <img src="https://picsum.photos/1920/1080?random=3">
+                <img src="https://picsum.photos/1920/1080?random=4">
+                <img src="https://picsum.photos/1920/1080?random=5">
+                <img src="https://picsum.photos/1920/1080?random=6">
+                <img src="https://picsum.photos/1920/1080?random=7">
+                <img src="https://picsum.photos/1920/1080?random=8">
+            </div>
+        </div>
+        <div class="update">
+            <h1>Stay Updated</h1>
+            <p>Subscribe to receive travel stories and destinations.</p>
+            <form action="#Home">
+                <input type="Email" name="Email" placeholder=" Enter your Email">
+                <button value="submit">Subscribe</button>
+            </form>
+    </div>
+        <div class = "contact">
+            <div class="intro">
+                <h1>Wander</h1>
+                <span>A simple travel website using HTML,CSS and JS.</span>
+            </div>
+            <div class="quick-links">
+                <h1>Quick Links</h1>
+                <a href="#Home">Home</a>
+                <a href="#Destination">Destinations</a>
+                <a href="#Gallery">Gallery</a>
+            </div>
+            <div class="contact-details">
+                <h1>Contact</h1>
+                <a href="hello@example.com">hello@example.com</a>
+                <span>+91 99999 99999</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        @2026 Wander ALL rights reserved.
+    </footer>
+
+
+</body>
+</html>
+
+<!-- https://images.unsplash.com/photo-1499678329028-101435549a4e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8MTkyMHgxMDgwJTIwd2FsbHBhcGVyfGVufDB8MHwwfHx8MA%3D%3D
+
+https://images.unsplash.com/photo-1482784160316-6eb046863ece?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8MTkyMHgxMDgwJTIwd2FsbHBhcGVyfGVufDB8MHwwfHx8MA%3D%3D
+
+https://images.unsplash.com/photo-1510279770292-4b34de9f5c23?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fDE5MjB4MTA4MCUyMHdhbGxwYXBlcnxlbnwwfDB8MHx8fDA%3D
+
+https://images.unsplash.com/photo-1503642551022-c011aafb3c88?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fDE5MjB4MTA4MCUyMHdhbGxwYXBlcnxlbnwwfDB8MHx8fDA%3D
+ -->
