@@ -2,6 +2,7 @@ let sidebar = document.querySelector('.sidebar');
 let menu = document.querySelector('.menu');
 let logo = document.querySelector('.logo');
 let navbar = document.querySelector('.nav-bar');
+let form = document.getElementById('form');
 
 function showSidebar(){
 	sidebar.style.display = "flex";
@@ -18,3 +19,7 @@ function hideSidebar(){
 	navbar.style.display = "block";
 
 }
+
+form.addEventListener("submit", function (event) {
+    alert("Thank you for your support.");
+ });
